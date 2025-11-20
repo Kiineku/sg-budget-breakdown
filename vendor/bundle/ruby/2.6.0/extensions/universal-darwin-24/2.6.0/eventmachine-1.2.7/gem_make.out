@@ -1,5 +1,5 @@
 current directory: /Users/penguin/Documents/GitHub/sg-budget-breakdown/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20251120-63111-1jv5z6h.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20251120-69482-16kl8un.rb extconf.rb
 creating Makefile
 
 current directory: /Users/penguin/Documents/GitHub/sg-budget-breakdown/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
@@ -24,4 +24,4 @@ ld: warning: search path '/AppleInternal/Library/BuildRoots/4~B5FAugAunRW9OK7YcF
 
 current directory: /Users/penguin/Documents/GitHub/sg-budget-breakdown/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20251120-63111-1jfi1o5
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20251120-69482-1p8ojw0

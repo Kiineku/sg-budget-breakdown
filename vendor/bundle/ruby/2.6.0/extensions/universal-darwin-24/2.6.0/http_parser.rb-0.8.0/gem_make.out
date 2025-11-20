@@ -1,5 +1,5 @@
 current directory: /Users/penguin/Documents/GitHub/sg-budget-breakdown/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20251120-63111-xhtaqp.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20251120-69482-1p9oez0.rb extconf.rb
 creating Makefile
 
 current directory: /Users/penguin/Documents/GitHub/sg-budget-breakdown/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
@@ -465,4 +465,4 @@ ld: warning: search path '/AppleInternal/Library/BuildRoots/4~B5FAugAunRW9OK7YcF
 
 current directory: /Users/penguin/Documents/GitHub/sg-budget-breakdown/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20251120-63111-2jirty
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20251120-69482-1xeknyc
