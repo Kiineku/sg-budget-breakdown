@@ -8,6 +8,51 @@ import treemap_fees from '../data/fees.json';
 import revenue_time_series from '../data/revenue_time_series.json';
 import expenses_time_series from '../data/expenses_time_series.json';
 
+// 1. Add this function definition anywhere in the file (e.g. before buildSankey)
+function buildParkingPie(divName, data) {
+    const chartData = data
+        .filter(d => d.from === 'Parking & Transportation')
+        .map(d => ({
+            category: d.to,
+            value: d.value
+        }));
+
+    if (!document.getElementById(divName)) return;
+
+    let root = am5.Root.new(divName);
+    root.setThemes([
+        am5themes_Animated.new(root)
+    ]);
+
+    let chart = root.container.children.push(
+        am5percent.PieChart.new(root, {
+            layout: root.verticalLayout,
+            innerRadius: am5.percent(50)
+        })
+    );
+
+    let series = chart.series.push(
+        am5percent.PieSeries.new(root, {
+            valueField: "value",
+            categoryField: "category",
+            alignLabels: false,
+            tooltip: am5.Tooltip.new(root, {
+                labelText: "{category}: {value.formatNumber('$#,###.')}"
+            })
+        })
+    );
+
+    series.data.setAll(chartData);
+
+    let legend = chart.children.push(am5.Legend.new(root, {
+        centerX: am5.percent(50),
+        x: am5.percent(50)
+    }));
+    legend.data.setAll(series.dataItems);
+
+    series.appear(1000, 100);
+}
+
 function buildSankey(divName, data, padRight) {
     // Create root element with theme
     let root = am5.Root.new(divName);
@@ -654,5 +699,9 @@ buildLine("line_expenses", expenses_time_series);
 
 buildSC("stackedcol_revenue", revenue_time_series);
 buildSC("stackedcol_expenses", expenses_time_series);
+
+// 2. Add this call at the VERY BOTTOM of the file
+// Notice we use 'sankey_parking' which matches the import at the top of the file
+buildParkingPie("parking_expenses_pie", sankey_parking);
 
 buildTuition("tuitionbill");
