@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "npx webpack && JEKYLL_ENV=development NODE_ENV=development bundle exec jekyll serve",
+    "dev": "npx webpack && bundle exec jekyll serve",
     "build": "npx webpack && JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build"
   },
   "devDependencies": {
@@ -10,20 +10,21 @@
     "@tailwindcss/typography": "^0.5.9",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "@webpack-cli/generators": "^3.0.1",
-    "autoprefixer": "^10.4.13",
-    "babel-core": "^6.26.3",
+    "@webpack-cli/generators": "^2.5.0",
+    "autoprefixer": "^10.4.22",
+    "babel-core": "^4.7.16",
     "babel-loader": "^9.1.2",
-    "babel-preset-env": "^1.7.0",
+    "babel-preset-env": "^0.0.0",
     "cssnano": "^5.1.15",
-    "postcss": "^8.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "postcss-import": "^15.1.0",
-    "tailwindcss": "^3.2.7",
+    "tailwindcss": "^3.4.18",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.5",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^5.2.2"
   },
   "dependencies": {
     "@amcharts/amcharts5": "^5.3.6",
